@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionClientTestSuite" parallel="classes" thread-count="9">
+    <parameter name="env" value="QA"></parameter>
+    <parameter name="browser" value="Chrome"></parameter>
+    <test verbose="2" preserve-order="true" name="Module1 Tests">
+        <classes>
+            <class name="xProjectTests.module1Tests.Module1Tests"></class>
+<!--            <class name="xProjectTests.module2Tests.Module2Tests"></class>-->
+            <!--            <class name="module2Tests.Module3Tests"></class>-->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test Suite">
+    <test name="Login, Product, Service request tests">
+        <parameter name="emailid" value="tester456@gmail.com"/>
+        <parameter name="password" value="test@123"/>
+        <groups>
+            <run>
+                <include name="QQ Alarm"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="training.testNgPractice.LoginModuleTests"/>
+            <class name="training.testNgPractice.ProductModuleTests"/>
+<!--            <class name="org.xproject.learnSeleniumAndJava.testNgPractice.ServiceRequests"/>-->
+        </classes>
+    </test> <!-- Test -->
+
+    <test name="Account Creation, Linking, Merging">
+        <parameter name="emailid" value="tester789@gmail.com"/>
+        <classes>
+            <class name="training.testNgPractice.LoginModuleTests">
+            <methods>
+                <include name="test11"></include>
+                <include name="test12"></include>
+                <exclude name="test13"></exclude>
+            </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite>

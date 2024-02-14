@@ -1,0 +1,7 @@
+PS C:\Users\91891\AppData\Roaming\npm> Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+PS C:\Users\91891\AppData\Roaming\npm> appium --verison
+
+[ERROR] Unrecognized arguments: --verison
+PS C:\Users\91891\AppData\Roaming\npm> appium -v
+2.0.0
+PS C:\Users\91891\AppData\Roaming\npm>

@@ -1,0 +1,98 @@
+Which locator to be used.
+
+Sample web application:
+https://www.apsrtconline.in/oprs-web/guest/ticket/cancel.do
+
+Priorities of locators:
+If we have straight unique attribute/property then:
+              id>name>linkText>partialLinkText
+                                >className
+                                >tagName
+If we don't have straight unique attribute/property then:
+                                >cssSelector
+                                >xpath
+Straight locators:
+Ex: 1
+Element: <a class="tabcopy" href="/oprs-web/guest/home.do?h=1" target="_top" title="Home">Home</a>
+Locator: linkText:
+              By.linkText("Home");
+
+Ex: 2
+Element: <span class="innerpageTitleHdead">
+                                                         Cancel Ticket</span>
+Locator: className
+              By.className("innerpageTitleHdead")
+
+Locators:
+              If we have multiple standard properties ex: id and name there, then use id only.
+              Element: <input type="button" name="searchBtn" id="searchBtn" value="Search" class="submitBtn" title="Search" onclick="hideMessages();showCancelTicket();">
+              By.id("searchBtn")
+
+Ex: 3
+If we don't know exact text/string to search, then use 'contains'
+If we have multiple tags with same property we suppose to use 'and' to filter
+Element: <td class="formlabel">  Ticket No.</td>
+
+Locator: xpath:
+              //td[@class='formlabel' and contains(.,"Ticket No.")]
+              Like 'and' we can use 'or' also in case of either one properly value only correct most of the times.
+
+
+Ex: 4
+    similar to contains we can use starts-with, ends-with methods as well in xpath.
+      //td[@class='formlabel' and starts-with(text(),"Ticket No.")]
+      //td[@class='formlabel' and ends-with(@class,"CreateButton")]---not only for text(); we can use for any attribute
+
+
+Ex: 5
+Element: <span>(24/7 Customer Support)</span>
+Locator: xpath:
+              By.xpath("//span[.='24/7 Customer Support)'])
+
+Validations using locators:
+Everything in selenium is to interact with elements in a web page.
+Based on the elements behaviors, we will take decisions to make
+a test step to pass or fail.
+If we suppose to verify blinking or not:
+              <a class="tabcopy blinking" href="/oprs-web/_assets/images/new/Doorlocations.pdf" target="_blank"
+              title="Door Delivery Locations List">Door Delivery Locations List</a>
+String blinkingProperty = driver.findElement(By.linkText("Door Delivery Locations List")).getProperty("class")
+Validation we suppose to do for blinkingProperty.
+
+Sometimes we suppose to use parent/ancestor: child/decendant relation in xpath
+//span[contains(text(),'Cancel Ticket')]//ancestor::div[@class='subContent']//input[@name='id']
+some cases:
+//span[contains(text(),'Cancel Ticket')]//parent::div[@class='subContent']//input[@name='id']
+//span[contains(text(),'Cancel Ticket')]//child::div[@class='subContent']//input[@name='id']
+//span[contains(text(),'Cancel Ticket')]//following::div[@class='subContent']//input[@name='id']
+//span[contains(text(),'Cancel Ticket')]//following-sibling::div[@class='subContent']//input[@name='id']
+//span[contains(text(),'Cancel Ticket')]//preceding-sibling::div[@class='subContent']//input[@name='id']
+
+ancestor: parent or grandparent or great-grandparent
+parent: one step above html tag
+child: one step below html tag
+sibilings: like brothers. Not a parent or child tag. It is same level tag
+following: next elements
+following-siblings: next sibling elements
+preceding: before elements
+receding-siblings: before sibling elements
+<div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container" style="padding-right: 0px;padding-left: 0px;">
+                    <!-- Brand and toggle -->
+                    <!-- Nav links for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Selenium
+					  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../test/flash-testing.html">Flash Movie Demo</a></li>
+                                    <li><a href="../../test/radio.html">Radio & Checkbox Demo</a></li>
+                                    <li><a href="../../test/table.html">Table Demo</a></li>
+                                    <li><a href="../../test/link.html">Accessing Link</a></li>
+                                    <li><a href="../../test/ajax.html">Ajax Demo</a></li>
+
+
+
+

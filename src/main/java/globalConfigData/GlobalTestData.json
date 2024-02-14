@@ -1,0 +1,31 @@
+{
+  "Test_Report_Loc": "C://TestReports//",
+  "Selenium_Grid_Url": "http://192.168.0.104:4444",
+  "qa": {
+    "APP_URL": "http://demo.guru99.com/test/newtours/",
+    "User1_UserName": "test",
+    "User1_Password": "test",
+    "User2_UserName": "john",
+    "User2_Password": "john1234",
+    "User3_UserName": "Alex",
+    "User3_Password": "Alex1212"
+  },
+  "dev": {
+    "APP_URL": "http://demo.dev.guru99.com/test/newtours/",
+    "User1_UserName": "test",
+    "User1_Password": "test",
+    "User2_UserName": "Pal",
+    "User2_Password": "john1234",
+    "User3_UserName": "Abraham",
+    "User3_Password": "Alex1212"
+  },
+  "prod": {
+    "QA_URL": "http://demo.guru99.com/test/newtours/",
+    "User1_UserName": "test",
+    "User1_Password": "test",
+    "User2_UserName": "john",
+    "User2_Password": "john1234",
+    "User3_UserName": "Alex",
+    "User3_Password": "Alex1212"
+  }
+}

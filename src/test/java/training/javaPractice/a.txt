@@ -1,0 +1,119 @@
+Classfile /C:/Users/91891/IdeaProjects/selenium-java-testng/target/test-classes/org/xproject/accounts/javaPractice/A.class
+  Last modified Dec 23, 2023; size 1074 bytes
+  MD5 checksum 4149b18b4e1a2d7a2798abe4b9c7bfab
+  Compiled from "A.java"
+public class org.xproject.learnSeleniumAndJava.javaPractice.A
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #5                          // org/xproject/accounts/javaPractice/A
+  super_class: #6                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #6.#24         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #25.#26        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = InvokeDynamic      #0:#30         // #0:makeConcatWithConstants:(I)Ljava/lang/String;
+   #4 = Methodref          #31.#32        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Class              #33            // org/xproject/accounts/javaPractice/A
+   #6 = Class              #34            // java/lang/Object
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               Lorg/xproject/accounts/javaPractice/A;
+  #14 = Utf8               main
+  #15 = Utf8               ([Ljava/lang/String;)V
+  #16 = Utf8               args
+  #17 = Utf8               [Ljava/lang/String;
+  #18 = Utf8               a
+  #19 = Utf8               I
+  #20 = Utf8               b
+  #21 = Utf8               c
+  #22 = Utf8               SourceFile
+  #23 = Utf8               A.java
+  #24 = NameAndType        #7:#8          // "<init>":()V
+  #25 = Class              #35            // java/lang/System
+  #26 = NameAndType        #36:#37        // out:Ljava/io/PrintStream;
+  #27 = Utf8               BootstrapMethods
+  #28 = MethodHandle       6:#38          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #29 = String             #39            // c value is : \u0001
+  #30 = NameAndType        #40:#41        // makeConcatWithConstants:(I)Ljava/lang/String;
+  #31 = Class              #42            // java/io/PrintStream
+  #32 = NameAndType        #43:#44        // println:(Ljava/lang/String;)V
+  #33 = Utf8               org/xproject/accounts/javaPractice/A
+  #34 = Utf8               java/lang/Object
+  #35 = Utf8               java/lang/System
+  #36 = Utf8               out
+  #37 = Utf8               Ljava/io/PrintStream;
+  #38 = Methodref          #45.#46        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #39 = Utf8               c value is : \u0001
+  #40 = Utf8               makeConcatWithConstants
+  #41 = Utf8               (I)Ljava/lang/String;
+  #42 = Utf8               java/io/PrintStream
+  #43 = Utf8               println
+  #44 = Utf8               (Ljava/lang/String;)V
+  #45 = Class              #47            // java/lang/invoke/StringConcatFactory
+  #46 = NameAndType        #40:#51        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #47 = Utf8               java/lang/invoke/StringConcatFactory
+  #48 = Class              #53            // java/lang/invoke/MethodHandles$Lookup
+  #49 = Utf8               Lookup
+  #50 = Utf8               InnerClasses
+  #51 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #52 = Class              #54            // java/lang/invoke/MethodHandles
+  #53 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #54 = Utf8               java/lang/invoke/MethodHandles
+{
+  public org.xproject.learnSeleniumAndJava.javaPractice.A();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lorg/xproject/accounts/javaPractice/A;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=4, args_size=1
+         0: bipush        22
+         2: istore_1
+         3: bipush        33
+         5: istore_2
+         6: iload_1
+         7: iload_2
+         8: iadd
+         9: istore_3
+        10: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        13: iload_3
+        14: invokedynamic #3,  0              // InvokeDynamic #0:makeConcatWithConstants:(I)Ljava/lang/String;
+        19: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        22: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 3
+        line 7: 6
+        line 8: 10
+        line 9: 22
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      23     0  args   [Ljava/lang/String;
+            3      20     1     a   I
+            6      17     2     b   I
+           10      13     3     c   I
+}
+SourceFile: "A.java"
+InnerClasses:
+  public static final #49= #48 of #52;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #28 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #29 c value is : \u0001

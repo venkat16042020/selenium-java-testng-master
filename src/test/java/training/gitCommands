@@ -1,0 +1,33 @@
+Remote repository:
+              Cloud maintained repo: https://abcd.org/test-suite.git
+git clone https://abcd.org/test-suite.git
+git clone -b branch3 https://abcd.org/test-suite.git
+              Brings code from remote repository to local working directory in your machine
+git checkout -b testcase1009
+              Create a new branch for your task going to work on
+git checkout brach6
+git checkout master
+              Local repo switched to brach6
+git add file1.txt
+git add Module2Tests.java
+git add .
+             add the files/changesDoneInFile to statging area.
+git status;
+              Show the differences between working directory and statging area.
+git commit -m 'Test1009 has been automated'
+Changes will get commited to the local repo.
+              Commited changes are ready to push to remote repository.
+git pull origin master(git fetch + git merge)
+              Before pushing changes to remote repository,
+              better we can make sure, having the lastest code like remote repo.
+git push origin branch99
+              Local repository codes changes will get pushed to remote repo.
+git remote -v:
+              Returs git urls.
+git log -3:
+              Returns last 3 commits information.
+git pull = git fetch + git merge
+incase of merge conflicts...
+1. git merge --abort: to abort the merge happening from remote repo.
+2. If we want to push our local change to remote means:
+              resolve merge conflicts and again commit the code after resolving merge conflicts.

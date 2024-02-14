@@ -1,0 +1,33 @@
+Remote repository:
+	Cloud maintained repo: https://abcd.org/test-suite.git
+
+git clone https://abcd.org/test-suite.git
+git clone -b branch3 https://abcd.org/test-suite.git
+	Brings code from remote repository to local working directory in your machine
+
+git checkout -b branch99
+	Create a new branch for your task going to work on
+git checkout brach6
+	Local repo switched to brach6
+	
+git add file1.txt
+	add the files/changesDoneInFile to statging area.
+	
+git status; 
+	Show the differences between working directory and statging area.
+	
+git commit -m 'Test1001 has been automated'
+	Commited changes are ready to push to remote repository.
+	
+git pull origin master(git fetch + git merge)
+	Before pushing changes to remote repository,
+	better we can make sure, having the lastest code like remote repo.
+
+git push origin branch99
+	Local repository codes changes will get pushed to remote repo.
+
+git remote -v:
+	Returs git urls.
+	
+git log -3:
+	Returns last 3 commits information.
