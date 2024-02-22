@@ -1,13 +1,21 @@
 package pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+//What is pageObject class?
+//We will keep all the locators details in a page object class. And we maintain methods for the functionalities
+//going to be performed on the page.
+//syntax for the creating a page object is:
+//@FindBy(name = "username"); private WebElement usernameTxtBox;
+
 public class LoginPage {
     public WebDriver webDriver;
-    @FindBy(name = "userName")
+    @FindBy(name = "username")
     private WebElement usernameTxtBox;
 
     @FindBy(name = "password")

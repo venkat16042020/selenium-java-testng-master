@@ -1,11 +1,11 @@
-package globalConfigData;
+package config;
 
 import org.json.simple.JSONObject;
 
 import static libraries.JsonUtility.readJsonFile;
 
-public class GlobalTestData {
-    public static  String globalConfigFilePath = "src/main/java/globalConfigData/GlobalTestData.json";
+public class Config {
+    public static  String globalConfigFilePath = "src/main/java/globalConfigData/Config.json";
     public static JSONObject globalTestDataOfEnv;
     public static  String env="qa";
     public static  String appUrl;
@@ -14,7 +14,7 @@ public class GlobalTestData {
     public static  String browserName= "chrome";
     public static String reportFilePath;
     public static String seleniumGridHubUrl;
-    public GlobalTestData(String env, String browserName){
+    public Config(String env, String browserName){
         JSONObject globalTestData = (JSONObject) readJsonFile(globalConfigFilePath);
         globalTestDataOfEnv = (JSONObject) globalTestData.get(env.toLowerCase());
         appUrl = (String) globalTestDataOfEnv.get("APP_URL");

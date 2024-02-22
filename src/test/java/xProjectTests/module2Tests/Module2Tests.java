@@ -6,7 +6,7 @@ import baseTest.TestNgBaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import globalConfigData.GlobalTestData;
+import config.Config;
 import libraries.CommonUtility;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -28,7 +28,7 @@ public class Module2Tests extends TestNgBaseTest {
     public void Module2TestSrs1003MakePaymentValidScenario() {
         System.out.println("Test1 is started....");
         LoginPage loginPage =  PageFactory.initElements(getWebDriver(), LoginPage.class);
-        HomePage homePage = loginPage.login(GlobalTestData.userName, GlobalTestData.password);
+        HomePage homePage = loginPage.login(Config.userName, Config.password);
         String expectedTitle = "Login: Mercury Tours";
         String actualTitle = getWebDriver().getTitle();
 //        CommonUtility.wait15Sec.set(11);
@@ -41,7 +41,7 @@ public class Module2Tests extends TestNgBaseTest {
         extentTest.log(Status.PASS, "Valid payments..efg..");
         extentTest.log(Status.PASS, "Valid payments..hij..");
 
-        String imageLoc = GlobalTestData.reportFilePath+ System.currentTimeMillis() + ".png";
+        String imageLoc = Config.reportFilePath+ System.currentTimeMillis() + ".png";
         // Take screenshot and store as a file format
         File src=((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
         try {
@@ -60,7 +60,7 @@ public class Module2Tests extends TestNgBaseTest {
     public void Module2TestSrs1004MakePaymentInvalidScenarios() {
         System.out.println("Test2 is started....");
         LoginPage loginPage =  PageFactory.initElements(getWebDriver(), LoginPage.class);
-        HomePage homePage = loginPage.login(GlobalTestData.userName, GlobalTestData.password);
+        HomePage homePage = loginPage.login(Config.userName, Config.password);
         String expectedTitle = "Login: Mercury Tours";
         String actualTitle = getWebDriver().getTitle();
 //        CommonUtility.wait15Sec.set(121);
@@ -73,7 +73,7 @@ public class Module2Tests extends TestNgBaseTest {
         extentTest.log(Status.PASS, "Invalid payments..efg..");
         extentTest.log(Status.PASS, "Invalid payments..hij..");
 
-        String imageLoc = GlobalTestData.reportFilePath+ System.currentTimeMillis() + ".png";
+        String imageLoc = Config.reportFilePath+ System.currentTimeMillis() + ".png";
         // Take screenshot and store as a file format
         File src=((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
         try {
@@ -92,7 +92,7 @@ public class Module2Tests extends TestNgBaseTest {
     public void Module2TestSrs1009Test() {
         System.out.println("Test2 is started....");
         LoginPage loginPage =  PageFactory.initElements(getWebDriver(), LoginPage.class);
-        HomePage homePage = loginPage.login(GlobalTestData.userName, GlobalTestData.password);
+        HomePage homePage = loginPage.login(Config.userName, Config.password);
         String expectedTitle = "Login: Mercury Tours";
         String actualTitle = getWebDriver().getTitle();
 //        CommonUtility.wait15Sec.set(121);
@@ -105,7 +105,7 @@ public class Module2Tests extends TestNgBaseTest {
         extentTest.log(Status.PASS, "Invalid payments..efg..");
         extentTest.log(Status.PASS, "Invalid payments..hij..");
 
-        String imageLoc = GlobalTestData.reportFilePath+ System.currentTimeMillis() + ".png";
+        String imageLoc = Config.reportFilePath+ System.currentTimeMillis() + ".png";
         // Take screenshot and store as a file format
         File src=((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
         try {

@@ -5,11 +5,10 @@ import baseTest.TestNgBaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
-import globalConfigData.GlobalTestData;
+import config.Config;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -26,9 +25,15 @@ public class Module1Tests extends TestNgBaseTest {
 
     @Test(priority = 1)
     public void Module1TestSrs1001BookFlightValidScenario() {
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("http://tcs.com");
+        driver.findElement(By.xpath("uname")).sendKeys("venkat");
+        driver.findElement(By.xpath("pwd")).sendKeys("kslksksls");
+        driver.findElement(By.xpath("submi")).click();
         System.out.println("Test1 is started....");
         LoginPage loginPage = PageFactory.initElements(getWebDriver(), LoginPage.class);
-        HomePage homePage = loginPage.login(GlobalTestData.userName, GlobalTestData.password);
+        HomePage homePage = loginPage.login(Config.userName, Config.password);
         String expectedTitle = "Login: Mercury Tours";
         String actualTitle = getWebDriver().getTitle();
         Assert.assertEquals(actualTitle, expectedTitle, "Verify app title");
@@ -38,7 +43,7 @@ public class Module1Tests extends TestNgBaseTest {
         extentTest.log(Status.PASS, "Ticket Created");
         extentTest.log(Status.INFO, "No of passengers shown correct");
 
-        String imageLoc = GlobalTestData.reportFilePath+ System.currentTimeMillis() + ".png";
+        String imageLoc = Config.reportFilePath+ System.currentTimeMillis() + ".png";
         // Take screenshot and store as a file format
         File src=((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
         try {
@@ -55,8 +60,9 @@ public class Module1Tests extends TestNgBaseTest {
     @Test(priority = 2)
     public void Module2TestSrs1002BookFlightInvalidScenario() {
 
+
         LoginPage loginPage = PageFactory.initElements(getWebDriver(), LoginPage.class);
-        HomePage homePage = loginPage.login(GlobalTestData.userName, GlobalTestData.password);
+        HomePage homePage = loginPage.login(Config.userName, Config.password);
         String expectedTitle = "Login: Mercury Tours";
         String actualTitle = getWebDriver().getTitle();
         Assert.assertEquals(actualTitle, expectedTitle, "Verify app title");
@@ -68,7 +74,7 @@ public class Module1Tests extends TestNgBaseTest {
         }catch (NoSuchElementException e){
             extentTest.log(Status.PASS, "Ticket Not Created with 30 passengers");
         }
-        String extentReportImage = GlobalTestData.reportFilePath+ System.currentTimeMillis() + ".png";
+        String extentReportImage = Config.reportFilePath+ System.currentTimeMillis() + ".png";
         // Take screenshot and store as a file format
         File src=((TakesScreenshot)getWebDriver()).getScreenshotAs(OutputType.FILE);
         try {

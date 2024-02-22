@@ -1,0 +1,40 @@
+Which framework you are using now?
+What if your current/recent automation framework used?
+
+We are using hybrid framework. It is combination of data driven and module frameworks.
+For data driven framework: We are running tests with multiple data sets by feeding data from excel files.
+                    (Ex: TestNg dataProvider concept we are using to drive tests with multiple data set)
+For modular driven framework: We are writing java methods to perform reusable functionalities instead of
+writing duplicate code. (Ex: login(x,y);addProduct(a,b,c,d);)
+As we are using here 2 frameworks, we are saying framework as hybrid framework.
+
+Basically it is a maven project.
+Maven project will be having src folder and pom xml.
+
+src folder will be having main and test folders.
+main folder will be having java packages config, libraries, pageObject.
+    1. config package will be having a config json file which has all required common data for all the environments.
+     config package will be having a java class to read the config json. So that, test data can be part of test execution.
+l   2. library package will be having java classes like CommonUtility, FrameworkUtility, JsonUtility, RetryAnalyser,
+     textFileUtility, WebDriverUtility, DataBaseUtility, ReportUtility etc.....
+     All the common functionalities required for the framework will be maintained under libraries package.
+    3. pageObject package will be having the page object classes which we will maintain for each page in the application.
+     Each web page will be having a java/pageObject class with the locators information for all the elements
+     present in the page. And PageObject class will be having the methods for the common functionalities that can be
+     performed on that page.
+
+test folder will be having baseTests, testNgTests, resources folders.
+    1. baseTest folder: It will be having all testNg basic methods like beforeSuite, beforeTest, beforeGroup,
+       beforeClass, beforeTest
+    2. testNgTests folder will be having all testNg class files. We are maintaining 1 java class file for 1 module.
+        Each testNg class file will have around 30 to 50 testNg tests. Here is the place we maintain actual tests.
+    3. resource folder will be having the all required data source files like test data for the tests and properties.
+
+pom.xml:
+    this is used to maintain all required dependencies. It will bring all java jar files for the execution environment.
+    Additionally we are using pom.xml to execute the tests from Jenkins job.
+
+ How to setup Jenkins jobs:
+ Test lead will setup the jenkins jobs. We have the permission to execute the jenkins job.
+
+

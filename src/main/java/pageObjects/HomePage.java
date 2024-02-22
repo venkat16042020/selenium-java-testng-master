@@ -12,10 +12,10 @@ public class HomePage {
     public WebDriver webDriver;
 
     @FindBy(linkText = "Flights")
-    private WebElement flightLink;
+    public WebElement flightLink;
 
     @FindBy(xpath = "//b[text()='Passengers:']")
-    private WebElement passengersLbl;
+    public WebElement passengersLbl;
 
     @FindBy(xpath = "//input[@name='tripType' and @value='oneway']")
     private WebElement oneWayRadioBtn;
