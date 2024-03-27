@@ -3,7 +3,7 @@ What if your current/recent automation framework used?
 
 We are using hybrid framework. It is combination of data driven and module frameworks.
 For data driven framework: We are running tests with multiple data sets by feeding data from excel files.
-                    (Ex: TestNg dataProvider concept we are using to drive tests with multiple data set)
+                    (Ex: TestNg dataProvider concept: we are using to drive tests with multiple data set)
 For modular driven framework: We are writing java methods to perform reusable functionalities instead of
 writing duplicate code. (Ex: login(x,y);addProduct(a,b,c,d);)
 As we are using here 2 frameworks, we are saying framework as hybrid framework.

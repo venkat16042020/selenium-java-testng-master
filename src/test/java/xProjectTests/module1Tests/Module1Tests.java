@@ -25,12 +25,6 @@ public class Module1Tests extends TestNgBaseTest {
 
     @Test(priority = 1)
     public void Module1TestSrs1001BookFlightValidScenario() {
-
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://tcs.com");
-        driver.findElement(By.xpath("uname")).sendKeys("venkat");
-        driver.findElement(By.xpath("pwd")).sendKeys("kslksksls");
-        driver.findElement(By.xpath("submi")).click();
         System.out.println("Test1 is started....");
         LoginPage loginPage = PageFactory.initElements(getWebDriver(), LoginPage.class);
         HomePage homePage = loginPage.login(Config.userName, Config.password);

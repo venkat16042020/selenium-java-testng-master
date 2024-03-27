@@ -7,8 +7,8 @@ git clone -b branch3 https://abcd.org/test-suite.git
 
 git checkout -b branch99
 	Create a new branch for your task going to work on
-git checkout brach6
-	Local repo switched to brach6
+git checkout branch6
+	Local repo switched to branch6
 	
 git add file1.txt
 	add the files/changesDoneInFile to statging area.

@@ -20,7 +20,7 @@
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.15.0</version>
+      <version>LATEST</version>
     </dependency>
 
     <dependency>
@@ -29,11 +29,11 @@
       <version>LATEST</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-http-jdk-client</artifactId>
-      <version>LATEST</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.seleniumhq.selenium</groupId>-->
+<!--      <artifactId>selenium-http-jdk-client</artifactId>-->
+<!--      <version>LATEST</version>-->
+<!--    </dependency>-->
 <!--    <dependency>-->
 <!--      <groupId>org.seleniumhq.selenium</groupId>-->
 <!--      <artifactId>selenium-remote-driver</artifactId>-->
@@ -44,11 +44,11 @@
       <artifactId>json-simple</artifactId>
       <version>LATEST</version>
     </dependency>
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-remote-driver</artifactId>
-      <version>LATEST</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.seleniumhq.selenium</groupId>-->
+<!--      <artifactId>selenium-remote-driver</artifactId>-->
+<!--      <version>LATEST</version>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>

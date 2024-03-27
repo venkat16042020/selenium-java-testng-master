@@ -1,8 +1,10 @@
 package libraries;
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverUtility {
     private static WebDriver webDriver ;
@@ -18,7 +20,9 @@ public class WebDriverUtility {
 //                ChromeOptions chromeOptions = new ChromeOptions();
 //                chromeOptions.setCapability("platformName", "Windows");
 //                chromeOptions.setCapability("se:name", "My simple test");
-                webDriver = new ChromeDriver();
+                System.setProperty("webdriver.chrome.driver","browserDrivers/chromedriver-win64/chromedriver.exe");
+//                WebDriverManager.chromedriver().setup();
+               webDriver = new ChromeDriver();
 //                try {
 //                    webDriver = new RemoteWebDriver(new URL(GlobalTestData.seleniumGridHubUrl), chromeOptions);
 //                } catch (MalformedURLException e) {

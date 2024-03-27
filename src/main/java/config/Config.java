@@ -5,7 +5,7 @@ import org.json.simple.JSONObject;
 import static libraries.JsonUtility.readJsonFile;
 
 public class Config {
-    public static  String globalConfigFilePath = "src/main/java/globalConfigData/Config.json";
+    public static  String globalConfigFilePath = "src/main/java/config/Config.json";
     public static JSONObject globalTestDataOfEnv;
     public static  String env="qa";
     public static  String appUrl;
