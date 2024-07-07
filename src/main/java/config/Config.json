@@ -1,6 +1,6 @@
 {
   "Test_Report_Loc": "C://TestReports//",
-  "Selenium_Grid_Url": "http://192.168.0.104:4444",
+  "Selenium_Grid_Url": "http://192.168.212.132:3333/",
   "qa": {
     "APP_URL": "http://demo.guru99.com/test/newtours/",
     "User1_UserName": "test",

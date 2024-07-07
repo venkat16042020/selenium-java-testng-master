@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
     public WebDriver webDriver;
-    @FindBy(name = "username")
+    @FindBy(name = "userName")
     private WebElement usernameTxtBox;
 
     @FindBy(name = "password")
