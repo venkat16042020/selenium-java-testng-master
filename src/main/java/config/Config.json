@@ -1,5 +1,5 @@
 {
-  "Test_Report_Loc": "C://TestReports//",
+  "Test_Report_Loc": "C:\\Users\\91891\\IdeaProjects\\selenium-java-testng-master\\testReports\\",
   "Selenium_Grid_Url": "http://192.168.212.132:3333/",
   "qa": {
     "APP_URL": "http://demo.guru99.com/test/newtours/",

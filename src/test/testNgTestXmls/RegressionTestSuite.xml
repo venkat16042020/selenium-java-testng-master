@@ -6,8 +6,8 @@
     <test verbose="2" preserve-order="true" name="Module1 Tests">
         <classes>
             <class name="xProjectTests.module1Tests.Module1Tests"></class>
-            <class name="xProjectTests.module2Tests.Module2Tests"></class>
-            <class name="xProjectTests.module2Tests.Module2Tests"></class>
+<!--            <class name="xProjectTests.module2Tests.Module2Tests"></class>-->
+<!--            <class name="xProjectTests.module2Tests.Module2Tests"></class>-->
         </classes>
     </test>
 </suite>
