@@ -1,3 +1,4 @@
+------Manual Testing Set1-----------
 Manual Testing
 Software Application
 Software Testing
@@ -10,17 +11,17 @@ Necessity of testing
 Necessity of automation testing
 SDLC Software Developement Life Cycle
 STLC Sofware Test Life Cycle
----------------
+------Manual Testing Set2-----------
 Bug Life Cycle
 Software application build version
 Error, Issue, Bug
 Severity, Prioirty of bug
---------------------
+----Manual Testing Set3----------------------
 Use Case
 Software Requirement Document(Functional Reqirement Document)
 Test Case, Test Case template
 Bug template
--------------------
+---------Manual Testing Set4-------------
 User interface testing
 Api testing
 Retesting
@@ -36,7 +37,7 @@ Change Request
 QA SignOff
 Verification
 Validation
---------------------
+---------Manual Testing Set5----------------
 Agile/Sprint model
 Sprint ceremonies
 Sprint backlog
@@ -47,6 +48,4 @@ Sprint planning
 Sprint review
 Sprit retrospective/retro
 Sprint action points
------------------
-
-
+-------------Test Automatoin Selenium Set1----
